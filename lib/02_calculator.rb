@@ -1,16 +1,25 @@
-#$ 01_temperature.rb
+#$ 02_calculator.rb
 
-
-
-def ftoc(temperature_f)
-    f = (temperature_f.to_f-32)*5/9
-    return f
-
+def add (a,b)
+    return a+b
 end
 
+def subtract (a,b)
+    return a-b
+end
 
-def ctof(temperature_c)
-    c = (temperature_c.to_f*9/5)+32
-    return c
+def sum (p)
+    return p.sum
+end
 
+def multiply (a,b)
+    return a*b
+end
+
+def power (a,b)
+    return a**b
+end
+
+def factorial (p=0)
+    return (1..(p.zero? ? 1 : p)).inject(:*)
 end
